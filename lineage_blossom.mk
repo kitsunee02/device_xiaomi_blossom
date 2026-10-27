@@ -20,7 +20,8 @@ PRODUCT_DISABLE_SCUDO := true
 
 scr_resolution := 720
 TARGET_SUPPORTS_BLUR := true
-TARGET_ENABLE_BLUR := true
+# Blossom is low
+TARGET_ENABLE_BLUR := false
 
 PRODUCT_NAME := lineage_blossom
 PRODUCT_DEVICE := blossom
@@ -28,3 +29,10 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+-include vendor/private/keys/keys.mk
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BuildDesc="blossom-user 17 CP2A.260605.0126 20261026 release-keys" \
+    BuildFingerprint=Xiaomi/blossom/blossom:17/CP2A.260605.0126/eng.fiyuu.20261026:userdebug/release-keys 
+
