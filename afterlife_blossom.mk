@@ -34,6 +34,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=Xiaomi/blossom/blossom:14/AP2A.240905.003/eng.fiyuu.202611:userdebug/release-keys
 
 # Afterlife - bringup
-AFTERLIFE_MAINTAINER := fiyuu | フィユー
+AFTERLIFE_MAINTAINER := kiyuu | キユー
 AFTERLIFE_GAPPS := false
-
