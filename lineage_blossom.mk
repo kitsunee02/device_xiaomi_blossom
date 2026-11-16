@@ -25,3 +25,14 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Keys
+-include vendor/private/keys/keys.mk
+
+# PRODUCT BUILD PROP OVERRIDES
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BuildDesc="blossom-userdebug 14 AP2A.240905.003 202611 release-keys" \
+    BuildFingerprint=Xiaomi/blossom/blossom:14/AP2A.240905.003/eng.fiyuu.202611:userdebug/release-keys
+
+# Maintainer
+MAINTAINER := fiyuu | フィユー
