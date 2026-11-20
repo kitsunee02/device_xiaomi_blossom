@@ -139,10 +139,6 @@ PRODUCT_COPY_FILES += \
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light-service.blossom
-
-# FM Radio
-PRODUCT_PACKAGES += \
-    RevampedFMRadio
     
 # Display
 PRODUCT_PACKAGES += \
@@ -272,12 +268,6 @@ PRODUCT_PACKAGES += \
     libcamera_metadata.vendor \
     libpng.vendor \
     libutilscallstack.vendor
-
-# Viper4fx
-$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
-
-# BCR
-$(call inherit-product, vendor/bcr/bcr.mk)
 
 # Media
 PRODUCT_PACKAGES += \
